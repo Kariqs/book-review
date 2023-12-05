@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('includes/head',{title:"Review"}) %>
+    <link rel="stylesheet" href="/styles/book-detail.css">
+    <script src="/scripts/comments.js" defer></script>
+</head>
+
+<body>
+    <%- include('includes/header') %>
+        <main id="review">
+            <address><a href="mailto:<%= book.email %>">Contact this person</a>  |  
+                <time datetime="<%= book.date %>">
+                    <%= book.date %>
+                </time>
+            </address>
+            <hr>
+            <p> <%= book.summary %></p>
+            <hr>
+            <p id="comments-desc">This review might have some comments.</p>
+            <button id="comments-button" data-bookid="<%= book._id %>">Load comments</button>
+            <section id="comments-section">
+
+            </section>
+        </main>
+        <form>
+            <label for="comment">Leave a comment</label>
+            <input type="text" id="comment" name="comment" required>
+            <button id="send-comment">Send</button>
+        </form>
+</body>
+
+</html>

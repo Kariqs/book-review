@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('includes/head',{title:"Share a book"}) %>
+        <link rel="stylesheet" href="/styles/share-book.css">
+</head>
+
+<body>
+    <%- include('includes/header') %>
+        <main>
+            <section id="share-book">
+                <form action="/share" method="post" enctype="multipart/form-data">
+                    <p>Post a review</p>
+                    <label for="title">Book title</label>
+                    <input type="text" name="title" id="title" required>
+                    <label for="author">Book author</label>
+                    <input type="text" name="author" id="author" required>
+                    <label for="price">Book price (Kshs)</label>
+                    <input type="number" name="price" id="price" required>
+                    <label for="email">Your email</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="summary">Review of the book</label>
+                    <textarea name="summary" id="summary" cols="30" rows="10" required></textarea>
+                    <label for="image">Book image</label>
+                    <input type="file" name="image" id="image" accept=".png,.jpg,.jpeg" required>
+                    <button>Post</button>
+                </form>
+            </section>
+        </main>
+</body>
+
+</html>

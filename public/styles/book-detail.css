@@ -1,0 +1,104 @@
+main {
+  margin-bottom: 1.5rem;
+}
+#post-detail {
+  display: flex;
+  width: 80%;
+  max-width: 50rem;
+  height: 13rem;
+  background-color: white;
+  margin: auto;
+  margin-top: 1rem;
+  overflow: hidden;
+  box-shadow: 2px 4px 8px rgb(58, 58, 58);
+}
+#post-detail img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+
+#desc {
+  color: rgb(60, 59, 59);
+  width: 70%;
+  padding: 0;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#title {
+  font-weight: bold;
+}
+
+#desc a {
+  text-decoration: none;
+  background-color: rgb(58, 58, 58, 0.3);
+  padding: 0.25rem;
+  color: black;
+}
+#desc a:hover {
+  background-color: rgb(58, 58, 58, 0.5);
+}
+
+#review {
+  background-color: white;
+  width: 80%;
+  max-width: 50rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+#review p {
+  white-space: pre-wrap;
+}
+#review a {
+  text-decoration: none;
+}
+
+#comments-button {
+  background-color: white;
+  border: 1px solid white;
+  font: inherit;
+  color: blueviolet;
+  text-align: center;
+}
+
+#comments-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#comments-section p {
+  font-style: italic;
+}
+
+form {
+  width: 80%;
+  max-width: 50rem;
+  padding: 0.5rem;
+  background-color: white;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 2px 8px rgb(58, 58, 58);
+}
+form label {
+  display: block;
+}
+
+form input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 2rem;
+  margin-top: 0.25rem;
+}
+
+form button {
+  font: inherit;
+  background-color:#ffa500;
+  border: 2px solid #ffa500;
+  margin-top: 0.25rem;
+  width: 4rem;
+  color: white;
+}

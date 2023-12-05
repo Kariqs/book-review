@@ -1,0 +1,9 @@
+<section id="post-detail">
+        <img src="<%= book.imagePath %>" alt="Book image"> 
+    <div id="desc">
+        <p id="title">Title: <%= book.title %></p>
+        <p>Author: <%= book.author %></p>
+        <p>Price(Kshs): <%= book.price %></p>
+        <a href="/share/<%= book._id %>">View Review</a>
+    </div>  
+</section>
